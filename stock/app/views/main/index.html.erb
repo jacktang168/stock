@@ -1,0 +1,30 @@
+<table border="1" cellspacing="0" cellpadding="0">
+    <tr>
+       <th>A基名称</th>
+       <th>B基名称</th>
+       <th>A基代码</th>
+       <th>A基净值</th>
+       <th>B基代码</th>
+       <th>B基净值</th>
+       <th>母基代码</th>
+       <th>母基净值</th>
+       <th>A基现价</th>
+       <th>B基现价</th>
+       <th>合并溢价</th>
+    </tr>
+    <% for stock in @stock_hash%>
+    <tr>
+        <td><%= stock[6] %></td>
+        <td><%= stock[8] %></td>
+        <td><%= stock[0] %></td>
+        <td><%= stock[1] %></td>
+        <td><%= stock[2] %></td>
+        <td><%= stock[3] %></td>
+        <td><%= stock[4] %></td>
+        <td><%= stock[5] %></td>
+        <td><%= stock[7] %></td>
+        <td><%= stock[9] %></td>
+        <td><%= stock[10] %></td>
+    </tr>
+    <%end%>
+</table>
